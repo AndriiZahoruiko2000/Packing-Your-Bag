@@ -1,0 +1,43 @@
+.categoryList {
+  display: grid;
+  gap: 20px;
+}
+
+.header {
+  display: grid;
+  gap: 8px;
+}
+
+.eyebrow {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #157253;
+}
+
+.title {
+  font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+  letter-spacing: -0.04em;
+  color: #102033;
+}
+
+.grid {
+  list-style: none;
+  display: grid;
+  gap: 18px;
+}
+
+.item {
+  min-width: 0;
+}
+
+.emptyState {
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px dashed rgba(76, 93, 115, 0.28);
+  background: rgba(255, 255, 255, 0.58);
+  color: #5f6f84;
+  text-align: center;
+  line-height: 1.6;
+}

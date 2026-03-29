@@ -1,0 +1,79 @@
+.thingsList {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(87, 116, 161, 0.14);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.title {
+  font-weight: 700;
+  color: #102033;
+}
+
+.count {
+  color: #687991;
+  font-size: 0.92rem;
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.emptyState {
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px dashed rgba(76, 93, 115, 0.24);
+  color: #67788e;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .thingsList {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .thingsList {
+    gap: 12px;
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .list {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 640px) {
+  .thingsList {
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .title,
+  .count {
+    text-align: left;
+  }
+
+  .emptyState {
+    padding: 16px 14px;
+    border-radius: 14px;
+  }
+}

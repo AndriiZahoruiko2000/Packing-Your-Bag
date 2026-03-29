@@ -1,0 +1,157 @@
+.page {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0 72px;
+  display: grid;
+  gap: 28px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.heroContent {
+  display: grid;
+  gap: 18px;
+  padding: 32px;
+  border-radius: 30px;
+  border: 1px solid rgba(16, 32, 51, 0.08);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(240, 247, 255, 0.9)),
+    #ffffff;
+  box-shadow: 0 24px 80px rgba(55, 84, 170, 0.12);
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #157253;
+}
+
+.title {
+  font-size: clamp(2.4rem, 5vw, 4.6rem);
+  line-height: 0.94;
+  letter-spacing: -0.06em;
+  color: #102033;
+}
+
+.description {
+  max-width: 58ch;
+  color: #54657b;
+  line-height: 1.7;
+  font-size: 1.02rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.primaryAction {
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #102033, #157253);
+  color: #ffffff;
+  font-weight: 700;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.primaryAction:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px rgba(16, 32, 51, 0.18);
+}
+
+.heroCard {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+  padding: 28px;
+  border-radius: 30px;
+  background: #102033;
+  color: #f4f8ff;
+  box-shadow: 0 24px 70px rgba(16, 32, 51, 0.16);
+}
+
+.cardLabel {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #7fe0bc;
+}
+
+.featureList {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.featureList li {
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  line-height: 1.55;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.infoCard {
+  display: grid;
+  gap: 12px;
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px solid rgba(16, 32, 51, 0.08);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 18px 50px rgba(55, 84, 170, 0.08);
+}
+
+.infoTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #102033;
+}
+
+.infoText {
+  color: #5d6e83;
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    width: min(100% - 20px, 1120px);
+    padding: 24px 0 40px;
+    gap: 20px;
+  }
+
+  .heroContent,
+  .heroCard,
+  .infoCard {
+    padding: 20px;
+    border-radius: 22px;
+  }
+
+  .title {
+    line-height: 1;
+  }
+}

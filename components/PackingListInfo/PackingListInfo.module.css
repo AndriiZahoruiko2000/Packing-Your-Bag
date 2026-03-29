@@ -1,0 +1,86 @@
+.packingListInfo {
+  display: grid;
+  gap: 10px;
+  padding: 28px;
+  border-radius: 28px;
+  border: 1px solid rgba(16, 32, 51, 0.08);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(240, 247, 255, 0.9)),
+    #ffffff;
+  box-shadow: 0 24px 80px rgba(55, 84, 170, 0.12);
+}
+
+.eyebrow {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #157253;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  color: #102033;
+}
+
+.description {
+  max-width: 56ch;
+  color: #526278;
+  line-height: 1.65;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.updateButton,
+.deleteButton {
+  min-height: 48px;
+  padding: 0 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.updateButton {
+  border: none;
+  background: linear-gradient(135deg, #102033, #157253);
+  color: #ffffff;
+}
+
+.updateButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 30px rgba(16, 32, 51, 0.16);
+}
+
+.deleteButton {
+  border: 1px solid rgba(186, 58, 66, 0.18);
+  background: rgba(186, 58, 66, 0.08);
+  color: #b13c44;
+}
+
+.deleteButton:hover {
+  transform: translateY(-1px);
+  background: rgba(186, 58, 66, 0.14);
+}
+
+@media (max-width: 640px) {
+  .packingListInfo {
+    padding: 22px 20px;
+    border-radius: 22px;
+  }
+
+  .title {
+    line-height: 1;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}

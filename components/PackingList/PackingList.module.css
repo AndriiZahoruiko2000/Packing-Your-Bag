@@ -1,0 +1,109 @@
+.packingList {
+  display: grid;
+  gap: 20px;
+}
+
+.header {
+  display: grid;
+  gap: 8px;
+}
+
+.eyebrow {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #157253;
+}
+
+.title {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  letter-spacing: -0.04em;
+  color: #102033;
+}
+
+.subtitle {
+  color: #56667c;
+  line-height: 1.6;
+}
+
+.grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.item {
+  min-width: 0;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  gap: 14px;
+  min-height: 220px;
+  padding: 22px;
+  border-radius: 24px;
+  border: 1px solid rgba(16, 32, 51, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(241, 247, 255, 0.92)),
+    #ffffff;
+  box-shadow: 0 18px 48px rgba(55, 84, 170, 0.1);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(21, 114, 83, 0.28);
+  box-shadow: 0 24px 56px rgba(38, 70, 132, 0.14);
+}
+
+.cardAccent {
+  width: 52px;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #157253, #4a90e2);
+}
+
+.cardTitle {
+  font-size: 1.28rem;
+  font-weight: 700;
+  color: #102033;
+  letter-spacing: -0.03em;
+}
+
+.cardDescription {
+  color: #516176;
+  line-height: 1.65;
+  flex: 1;
+}
+
+.cardAction {
+  align-self: end;
+  font-weight: 700;
+  color: #157253;
+}
+
+.emptyState {
+  display: grid;
+  gap: 8px;
+  align-content: center;
+  min-height: 220px;
+  padding: 24px;
+  border: 1px dashed rgba(76, 93, 115, 0.28);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.58);
+  text-align: center;
+}
+
+.emptyTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #102033;
+}
+
+.emptyText {
+  color: #65758b;
+  line-height: 1.6;
+}

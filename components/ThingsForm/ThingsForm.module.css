@@ -1,0 +1,62 @@
+.thingsForm {
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(247, 250, 255, 0.92);
+  border: 1px solid rgba(87, 116, 161, 0.14);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 140px auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+}
+
+.field label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1d324d;
+}
+
+.field input {
+  min-height: 48px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(76, 93, 115, 0.2);
+  background: #ffffff;
+  outline: none;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.field input:focus {
+  border-color: rgba(19, 132, 98, 0.55);
+  box-shadow: 0 0 0 4px rgba(20, 158, 115, 0.12);
+}
+
+.submitButton {
+  min-height: 48px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #102033, #157253);
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.submitButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 26px rgba(16, 32, 51, 0.15);
+}
+
+@media (max-width: 760px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
