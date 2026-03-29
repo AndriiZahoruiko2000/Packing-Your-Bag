@@ -11,8 +11,8 @@ const CategoryList = () => {
   return (
     <div className={css["categoryList"]}>
       <div className={css["header"]}>
-        <p className={css["eyebrow"]}>Categories</p>
-        <h2 className={css["title"]}>Organize your essentials by section</h2>
+        <p className={css["eyebrow"]}>Категорії</p>
+        <h2 className={css["title"]}>Розклади важливі речі по розділах</h2>
       </div>
 
       <ul className={css["grid"]}>
@@ -26,7 +26,7 @@ const CategoryList = () => {
 
         {categoryList.length === 0 && (
           <li className={css["emptyState"]}>
-            Create your first category to split things into clear groups.
+            Створи першу категорію, щоб поділити речі на зрозумілі групи.
           </li>
         )}
       </ul>

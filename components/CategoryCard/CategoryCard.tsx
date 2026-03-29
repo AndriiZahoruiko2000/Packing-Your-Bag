@@ -20,12 +20,12 @@ const CategoryCard = ({ item }: CategoryCardProps) => {
     <div className={css["categoryItem"]}>
       <div className={css["categoryHeader"]}>
         <div className={css["categoryTitleBlock"]}>
-          <p className={css["categoryLabel"]}>Category</p>
+          <p className={css["categoryLabel"]}>Категорія</p>
           <p className={css["categoryName"]}>{item.title}</p>
         </div>
 
         <button onClick={toggle} className={css["toggleButton"]} type="button">
-          {showList ? "Hide items" : "Show items"}
+          {showList ? "Сховати речі" : "Показати речі"}
         </button>
       </div>
 

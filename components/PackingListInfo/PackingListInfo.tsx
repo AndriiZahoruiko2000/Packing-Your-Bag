@@ -24,15 +24,15 @@ const PackingListInfo = () => {
 
   return (
     <section className={css["packingListInfo"]}>
-      <p className={css["eyebrow"]}>Packing list</p>
+      <p className={css["eyebrow"]}>Список речей</p>
       <h1 className={css["title"]}>{item?.title}</h1>
       <p className={css["description"]}>{item?.description}</p>
       <div className={css["actions"]}>
         <button onClick={openModal} className={css["updateButton"]} type="button">
-          Update
+          Оновити
         </button>
         <button onClick={handleDelete} className={css["deleteButton"]} type="button">
-          Delete
+          Видалити
         </button>
       </div>
       {isOpenModal && (

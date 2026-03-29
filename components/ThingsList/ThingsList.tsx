@@ -14,8 +14,8 @@ const ThingsList = ({ categoryId }: ThingsListProps) => {
   return (
     <div className={css["thingsList"]}>
       <div className={css["header"]}>
-        <p className={css["title"]}>Things in this category</p>
-        <p className={css["count"]}>{thingsList.length} items</p>
+        <p className={css["title"]}>Речі в цій категорії</p>
+        <p className={css["count"]}>{thingsList.length} шт.</p>
       </div>
 
       <ul className={css["list"]}>
@@ -25,7 +25,7 @@ const ThingsList = ({ categoryId }: ThingsListProps) => {
 
         {thingsList.length === 0 && (
           <li className={css["emptyState"]}>
-            Add your first item for this category to start packing.
+            Додай першу річ у цю категорію, щоб почати пакування.
           </li>
         )}
       </ul>

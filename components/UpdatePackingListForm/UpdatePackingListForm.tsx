@@ -31,36 +31,36 @@ const UpdatePackingListForm = ({
   return (
     <div className={css["updatePackingListForm"]}>
       <div className={css["intro"]}>
-        <p className={css["eyebrow"]}>Edit list</p>
-        <h2 className={css["title"]}>Update packing list details</h2>
+        <p className={css["eyebrow"]}>Редагування списку</p>
+        <h2 className={css["title"]}>Онови дані списку речей</h2>
         <p className={css["description"]}>
-          Change the list name or description and save the new version.
+          Зміни назву або опис списку та збережи оновлену версію.
         </p>
       </div>
 
       <form action={handleSubmit} className={css["form"]}>
         <div className={css["field"]}>
-          <label htmlFor={`${id}-list-name`}>List Name</label>
+          <label htmlFor={`${id}-list-name`}>Назва списку</label>
           <input
             type="text"
             name="list-name"
             id={`${id}-list-name`}
-            placeholder="Weekend in Berlin"
+            placeholder="Вікенд у Берліні"
           />
         </div>
 
         <div className={css["field"]}>
-          <label htmlFor={`${id}-description`}>Description</label>
+          <label htmlFor={`${id}-description`}>Опис</label>
           <input
             type="text"
             name="description"
             id={`${id}-description`}
-            placeholder="3 days, carry-on only, spring weather"
+            placeholder="3 дні, лише ручна поклажа, весняна погода"
           />
         </div>
 
         <button type="submit" className={css["submitButton"]}>
-          Update List
+          Оновити список
         </button>
       </form>
     </div>

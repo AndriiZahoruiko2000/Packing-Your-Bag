@@ -9,25 +9,25 @@ const Haeder = () => {
           <span className={css["brandMark"]}>SP</span>
           <span className={css["brandText"]}>
             <strong>Smart Pack</strong>
-            <span>Travel packing planner</span>
+            <span>Планувальник речей для подорожей</span>
           </span>
         </Link>
 
-        <nav className={css["nav"]} aria-label="Main navigation">
+        <nav className={css["nav"]} aria-label="Головна навігація">
           <ul className={css["navList"]}>
             <li>
               <Link href="/" className={css["navLink"]}>
-                Home
+                Головна
               </Link>
             </li>
             <li>
               <Link href="/list-packing" className={css["navLink"]}>
-                Packing Lists
+                Списки
               </Link>
             </li>
             <li>
               <Link href="" className={css["navLink"]}>
-                Settings
+                Налаштування
               </Link>
             </li>
           </ul>

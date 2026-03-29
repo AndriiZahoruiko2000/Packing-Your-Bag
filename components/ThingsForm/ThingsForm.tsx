@@ -30,17 +30,17 @@ const ThingsForm = ({ categoryId }: ThingsFormProps) => {
     <div className={css["thingsForm"]}>
       <form action={handleSubmit} className={css["form"]}>
         <div className={css["field"]}>
-          <label htmlFor={`${id}-things-name`}>Thing name</label>
+          <label htmlFor={`${id}-things-name`}>Назва речі</label>
           <input
             type="text"
             name="things-name"
             id={`${id}-things-name`}
-            placeholder="Toothbrush"
+            placeholder="Зубна щітка"
           />
         </div>
 
         <div className={css["field"]}>
-          <label htmlFor={`${id}-things-quantity`}>Quantity</label>
+          <label htmlFor={`${id}-things-quantity`}>Кількість</label>
           <input
             type="number"
             name="things-quantity"
@@ -51,7 +51,7 @@ const ThingsForm = ({ categoryId }: ThingsFormProps) => {
         </div>
 
         <button type="submit" className={css["submitButton"]}>
-          Add Thing
+          Додати річ
         </button>
       </form>
     </div>

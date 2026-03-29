@@ -10,7 +10,7 @@ const Modal = ({ children, close }: ModalProps) => {
     <div className={css["backdrop"]}>
       <div className={css["modal"]}>
         <button className={css["closeModal"]} onClick={close} type="button">
-          Close
+          Закрити
         </button>
         {children}
       </div>

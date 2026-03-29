@@ -28,23 +28,23 @@ const ThingsItem = ({ thing }: ThingsItemProps) => {
             toggleStatus(thing.id);
           }}
         >
-          {thing.isPacked ? "Packed" : "Check"}
+          {thing.isPacked ? "Зібрано" : "Позначити"}
         </button>
 
         <div className={css["content"]}>
           <p className={css["itemTitle"]}>{thing.title}</p>
           <p className={css["itemMeta"]}>
-            {thing.isPacked ? "Packed and ready to go" : "Not packed yet"}
+            {thing.isPacked ? "Річ уже зібрана" : "Ще не зібрано"}
           </p>
         </div>
       </div>
 
       <div className={css["side"]}>
-        <p className={css["quantityLabel"]}>Quantity</p>
+        <p className={css["quantityLabel"]}>Кількість</p>
         <p className={css["quantity"]}>x{thing.quantity}</p>
       </div>
       <button className={css["deleteButton"]} onClick={handleDelete} type="button">
-        Delete Item
+        Видалити річ
       </button>
     </li>
   );

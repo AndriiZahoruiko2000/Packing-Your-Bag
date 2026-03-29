@@ -25,22 +25,22 @@ const CategoryListForm = () => {
   return (
     <section className={css["categoryListForm"]}>
       <div className={css["intro"]}>
-        <p className={css["eyebrow"]}>Structure</p>
-        <h2 className={css["title"]}>Add categories before adding things</h2>
+        <p className={css["eyebrow"]}>Структура</p>
+        <h2 className={css["title"]}>Додай категорії перед заповненням речей</h2>
       </div>
 
       <form action={handleSubmit} className={css["form"]}>
         <div className={css["field"]}>
-          <label htmlFor={`${id}-category-name`}>Category Name</label>
+          <label htmlFor={`${id}-category-name`}>Назва категорії</label>
           <input
             type="text"
             name="category-name"
             id={`${id}-category-name`}
-            placeholder="Documents, Clothes, Electronics"
+            placeholder="Документи, Одяг, Електроніка"
           />
         </div>
         <button type="submit" className={css["submitButton"]}>
-          Create Category
+          Створити категорію
         </button>
       </form>
     </section>

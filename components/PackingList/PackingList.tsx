@@ -9,10 +9,11 @@ const PackingList = () => {
   return (
     <section className={css["packingList"]}>
       <div className={css["header"]}>
-        <p className={css["eyebrow"]}>Saved lists</p>
-        <h2 className={css["title"]}>Your packing lists</h2>
+        <p className={css["eyebrow"]}>Збережені списки</p>
+        <h2 className={css["title"]}>Твої списки речей</h2>
         <p className={css["subtitle"]}>
-          Keep trip ideas organized and open any list to continue planning.
+          Тримай підготовку до поїздок у порядку та відкривай будь-який список,
+          щоб продовжити планування.
         </p>
       </div>
 
@@ -24,7 +25,7 @@ const PackingList = () => {
                 <div className={css["cardAccent"]} />
                 <p className={css["cardTitle"]}>{el.title}</p>
                 <p className={css["cardDescription"]}>{el.description}</p>
-                <span className={css["cardAction"]}>Open list</span>
+                <span className={css["cardAction"]}>Відкрити список</span>
               </Link>
             </li>
           );
@@ -32,9 +33,9 @@ const PackingList = () => {
 
         {packingList.length === 0 && (
           <li className={css["emptyState"]}>
-            <p className={css["emptyTitle"]}>No lists yet</p>
+            <p className={css["emptyTitle"]}>Списків поки немає</p>
             <p className={css["emptyText"]}>
-              Create your first packing list to start organizing essentials.
+              Створи свій перший список речей, щоб почати підготовку до поїздки.
             </p>
           </li>
         )}

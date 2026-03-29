@@ -7,54 +7,54 @@ const Page = () => {
       <section className={css["hero"]}>
         <div className={css["heroContent"]}>
           <p className={css["eyebrow"]}>Smart Pack</p>
-          <h1 className={css["title"]}>Simple travel planning for your packing lists</h1>
+          <h1 className={css["title"]}>Просте планування подорожей і списків речей</h1>
           <p className={css["description"]}>
-            Smart Pack helps you create packing lists for different trips, split
-            them into categories, and add things with quantity so nothing gets
-            forgotten before departure.
+            Smart Pack допомагає створювати списки речей для різних поїздок,
+            розділяти їх на категорії та додавати кількість предметів, щоб
+            нічого не забути перед виїздом.
           </p>
 
           <div className={css["actions"]}>
             <Link href="/list-packing" className={css["primaryAction"]}>
-              Open packing lists
+              Відкрити списки
             </Link>
           </div>
         </div>
 
         <div className={css["heroCard"]}>
-          <p className={css["cardLabel"]}>What this site does</p>
+          <p className={css["cardLabel"]}>Що вміє сайт</p>
           <ul className={css["featureList"]}>
-            <li>Create separate packing lists for different trips.</li>
-            <li>Group things by categories like clothes or documents.</li>
-            <li>Add item quantities to keep preparation clear.</li>
-            <li>Keep all trip essentials in one place.</li>
+            <li>Створює окремі списки речей для різних подорожей.</li>
+            <li>Групує предмети за категоріями, наприклад одяг чи документи.</li>
+            <li>Додає кількість речей для точнішої підготовки.</li>
+            <li>Зберігає всі важливі речі для поїздки в одному місці.</li>
           </ul>
         </div>
       </section>
 
       <section className={css["infoGrid"]}>
         <article className={css["infoCard"]}>
-          <p className={css["infoTitle"]}>For travelers</p>
+          <p className={css["infoTitle"]}>Для мандрівників</p>
           <p className={css["infoText"]}>
-            Use the app before weekends away, business trips, or long vacations
-            when you need a structured list instead of notes spread across
-            different apps.
+            Користуйся застосунком перед поїздкою на вихідні, відрядженням чи
+            довгою відпусткою, коли потрібен структурований список замість
+            нотаток у різних місцях.
           </p>
         </article>
 
         <article className={css["infoCard"]}>
-          <p className={css["infoTitle"]}>How it works</p>
+          <p className={css["infoTitle"]}>Як це працює</p>
           <p className={css["infoText"]}>
-            First create a packing list, then add categories, and after that
-            fill each category with the exact things you want to take.
+            Спочатку створи список для поїздки, потім додай категорії, а після
+            цього заповни кожну категорію речами, які хочеш взяти.
           </p>
         </article>
 
         <article className={css["infoCard"]}>
-          <p className={css["infoTitle"]}>Why it helps</p>
+          <p className={css["infoTitle"]}>Чому це зручно</p>
           <p className={css["infoText"]}>
-            A clean structure makes it easier to review what is already planned
-            and what still needs to be packed before leaving.
+            Зрозуміла структура допомагає швидко побачити, що вже підготовлено,
+            а що ще потрібно покласти перед виїздом.
           </p>
         </article>
       </section>
